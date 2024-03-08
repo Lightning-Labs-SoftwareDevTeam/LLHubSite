@@ -4,7 +4,7 @@
 
 **Spark Innovation Chess Game**
 
-Follow this game on [Lichess.org]([https://](https://lichess.org/cfmAfj4B))
+Follow this game on [Lichess.org](https://lichess.org/cfmAfj4B)
 ```pgn
 [Event "Innovation Blitz Casual"]
 [Site "GitHub README"]
