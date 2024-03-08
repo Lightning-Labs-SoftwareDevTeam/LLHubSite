@@ -15,6 +15,7 @@ html {
 body {
     display: flex;
     flex-direction: column;
+    font-family: 'Source Sans Pro', sans-serif;
     overflow-y: auto;
     overscroll-behavior-y: none;
     text-rendering: optimizeLegibility;
@@ -23,15 +24,30 @@ body {
     -ms-overflow-style: scrollbar;
 }
 
+h1 {
+    background-color: #252525;
+    column-span: all;
+    color: white;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
 #root, body, html {
     width: 100%;
     -webkit-overflow-scrolling: touch;
     min-height: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .box {
     border: 1px solid rgb(25, 25, 83);
     padding: 5px;
+}
+
+.box, .logo-image {
+    border-radius: 8px;
 }
 
 .col-1 {float: left; width: 8.33%;}
@@ -64,3 +80,13 @@ p {
     border: 1px solid black;
 }
 
+ul {
+    list-style: none;
+}
+
+.logo-image {
+    max-width: 10%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
