@@ -14,6 +14,11 @@ html {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+body {
+    counter-reset: list;
+}
+
+
 *, *:after, *:before {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -39,6 +44,7 @@ a, p, .btn {
 
 p {
     line-height: 1.9em;
+    font-weight: 300;
 }
 
 a, p {
@@ -68,11 +74,23 @@ a:hover, .active {
 }
 
 nav {
+    position: relative;
     width: 100%;
     background-color: #fff;
     overflow: hidden;
     flex-wrap: wrap;
     flex-direction: column;
+}
+
+nav::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background: linear-gradient(to right, #0eaa81, white);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 nav section {
@@ -158,6 +176,10 @@ nav .links li .active:after, nav .links li a:hover:after {
     font-size: 3.5em;
 }
 
+.medium {
+    font-size: 2.2em;
+}
+
 .tag {
     padding: 0.1rem 0.3rem;
     border-radius: 3px;
@@ -235,14 +257,6 @@ h1, h2, h3 {
 a:hover, .box:hover {
     transform: translateY(-2px);
     transition: all 0.2s ease-in-out;
-}
-
-p {
-    border: 1px solid black;
-}
-
-body, p {
-    line-height: 1.4;
 }
 
 ul {
