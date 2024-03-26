@@ -186,6 +186,7 @@ nav .links li .active:after, nav .links li a:hover:after {
 
 .medium {
     font-size: 2.2em;
+    color: #648DE5;
 }
 
 .tag {
@@ -210,11 +211,24 @@ body {
     -ms-overflow-style: scrollbar;
 }
 
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #252525;
+}
+
 h1 {
     background-color: #252525;
     column-span: all;
     color: white;
     padding: 15px;
+}
+
+.right-align-image {
+    height: 50px;
+    width: auto;
 }
 
 h1, h2, h3 {
@@ -262,7 +276,7 @@ h1, h2, h3 {
     border: 1px dotted white;
 }
 
-a:hover, .box:hover {
+a:hover {
     transform: translateY(-2px);
     transition: all 0.2s ease-in-out;
 }
@@ -273,8 +287,7 @@ ul {
     list-style: none;
 }
 
-.logo-image {
-    
+.logo-image {    
     max-width: 10%;
     height: auto;
     display: block;
