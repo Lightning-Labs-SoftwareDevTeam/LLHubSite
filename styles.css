@@ -24,6 +24,8 @@ body {
     background-image: url('images/DRONES.jpeg');
     background-size: cover;
     background-position: center;
+    position: relative;
+    width: auto;
 }
 
 *, *:after, *:before {
@@ -76,7 +78,16 @@ a:hover, .active {
     display: -ms-flexbox;
 }
 
+.flex {
+    position: relative;
+    width: 100%;
+}
+
 .flex_content {
+    width: auto;
+}
+
+.flex_contentSecond {
     width: 100%;
 }
 
@@ -156,6 +167,12 @@ nav .links li .active:after, nav .links li a:hover:after {
     padding: 4rem;
 }
 
+.padding_4xSecond {
+    padding: 4rem;
+    position: absolute;
+    width: 100%;
+}
+
 .btn {
     display:block;
     padding: 0.5rem 1rem;
@@ -181,12 +198,15 @@ nav .links li .active:after, nav .links li a:hover:after {
 }
 
 .big {
-    font-size: 3.5em;
+    font-size: 2.9em;
 }
 
 .medium {
-    font-size: 2.2em;
+    font-size: 2.9em;
     color: #648DE5;
+    display: inline-block;
+    position: inherit;
+    box-sizing: border-box;
 }
 
 .tag {
