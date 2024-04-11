@@ -13,3 +13,24 @@
 .header-logo {
     height: calc(2rem + 2vw);
 }
+
+.navbar-logo {
+    height: calc(1rem + 1vw);
+}
+
+.drone-bg {
+    background-image: url('images/DRONES.jpeg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: auto;
+}
+
+.card-text {
+    color: white;
+}
+
+.card-title {
+    font-size: 5em;
+    color: white;
+}
