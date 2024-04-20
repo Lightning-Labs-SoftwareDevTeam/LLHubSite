@@ -2,22 +2,109 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+/* refactoring MAHESH for globally applicable styles */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 html, body, #root, div, h1, h2, h3, p, ul, li, a {
     margin: 0;
     padding:0;
-    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Source Sans Pro', sans-serif;
+    overflow-y: auto;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0.7;
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover, .active {
+    opacity: 1;
 }
 
 html {
     scroll-behavior: smooth;
-    -webkit-text-size-adjust: 100%; /* prevents font scaling in landscape while user zooms in */
-    height: calc(100% + env(safe-area-inset-top));
+    /* -webkit-text-size-adjust: 100%; /* prevents font scaling in landscape while user zooms in */
+   /* height: calc(100% + env(safe-area-inset-top));
     text-size-adjust: 100%;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); */
 }
 
-body {
+/* body {
     counter-reset: list;
+} */
+
+/* navbar styling */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 0 20px;
+    height: 45px;
+    position: relative;
+    width: 100%;
+}
+
+nav::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background: linear-gradient(to right, #0eaa81, white);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.nav-logo {
+    max-width: 60px;
+    padding: 0.8rem;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.nav-links li {
+    padding: 0 15px;
+}
+
+.nav-links li a {
+    padding: 0.6rem 0;
+    position: relative;
+}
+
+.nav-links li a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background: #0eaa81;
+    transition: width 0.5s ease-in-out;
+    width: 0%;
+    position: absolute;
+    bottom: -2px;
+}
+
+.nav-links li a:hover::after, .nav-links li a.active::after {
+    width: 100%;
 }
 
 .main-content {
@@ -91,7 +178,7 @@ a:hover, .active {
     width: 100%;
 }
 
-nav {
+/* nav {
     position: relative;
     width: 100%;
     height: 45px;
@@ -156,7 +243,7 @@ nav .links li .active:after, nav .links li a:after {
 
 nav .links li .active:after, nav .links li a:hover:after {
     width: 100%;
-}
+} */
 
 .title {
     font-family: "Montserrat", sans-serif;
