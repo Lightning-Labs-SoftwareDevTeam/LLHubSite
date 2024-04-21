@@ -246,10 +246,6 @@ article {
     padding: 5px;
 }
 
-.box, .logo-image {
-    border-radius: 8px;
-}
-
 .logo-column {
     float: left; 
     width: 100%;
