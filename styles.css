@@ -38,6 +38,15 @@ html {
     scroll-behavior: smooth;
 }
 
+/* disclaimer banner styles */
+.unclass-data-banner {
+    text-align: center;
+    background-color: rgb(78, 172, 86);
+    padding-top: 1px;
+    padding-bottom: 1px;
+    color: white;
+}
+
 /* header styles */
 .header-container {
     display: flex;
@@ -231,6 +240,7 @@ article {
     transform: translateY(-2px);
 }
 
+/* Lightning Labs logo column */
 .box {
     border: 1px solid rgb(25, 25, 83);
     padding: 5px;
@@ -240,8 +250,7 @@ article {
     border-radius: 8px;
 }
 
-/* Lightning Labs logo section */
-.col-12 {
+.logo-column {
     float: left; 
     width: 100%;
     padding: 10px;
@@ -255,8 +264,15 @@ article {
     margin: 0 auto;
 }
 
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
+/* footer styling */
+.footer {
+    background-color:#252525;
+    padding-bottom: 100px;   
+}
+
+.row {
+    text-align: center;
+    color: aliceblue;
+    padding-top: 6em;
+    padding-bottom: 0%;
 }
