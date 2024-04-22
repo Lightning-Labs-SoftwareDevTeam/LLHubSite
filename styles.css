@@ -306,3 +306,30 @@ article {
         padding: 40px 0;
     }
 }
+
+/* styles for mobile screens */
+@media only screen and (max-width: 767px) {
+    .main-content {
+        padding: 20px;
+    }
+
+    .content-section {
+        width: 100%;
+    }
+
+    .emphasis-word {
+        font-size: calc(5vw + 1em);
+    }
+
+    .logo-column {
+        width: auto;
+    }
+
+    .footer .row {
+        padding-top: 3rem;
+    }
+
+    .nav-logo {
+        max-width: 40px;
+    }
+}
