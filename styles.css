@@ -137,8 +137,10 @@ nav::after {
 /* main content styles */
 .main-content {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     background-image: url('images/DRONES.jpeg');
     background-size: cover;
     background-position: center;
@@ -147,15 +149,16 @@ nav::after {
 
 /* styles common to both content sections */
 .content-section {
-    position: relative;
+    flex-basis: 100%;
+    /* position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     padding: 4rem;
-    margin: 10px;
+    margin: 10px auto;
     border-radius: 5px;
-    background: transparent;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .content-section h1 {
@@ -191,6 +194,10 @@ article {
     font-family: 'Montserrat', sans-serif;
     position: relative;
     top: -20px;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: calc(10% - 2px);
 }
 
 .idea {
@@ -199,6 +206,7 @@ article {
 
 .innovations {
     color: #648DE5;
+    text-align: center;
 }
 
 .flex_content {
@@ -271,4 +279,30 @@ article {
     color: aliceblue;
     padding-top: 6em;
     padding-bottom: 0%;
+}
+
+/* styles for laptop/desktop screens */
+@media only screen and (min-width: 768px) {
+    .main-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .content-section {
+        width: calc(50% - 20px);
+        max-width: 500px;
+        padding: 2rem;
+    }
+
+    .emphasis-word {
+        font-size: calc(5vw + 1em);
+    }
+
+    .logo-column {
+        width: auto;
+    }
+
+    .footer {
+        padding: 40px 0;
+    }
 }
