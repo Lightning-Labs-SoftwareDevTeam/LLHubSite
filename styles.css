@@ -147,6 +147,18 @@ nav::after {
     padding: 20px;
 }
 
+.main-content-team {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/LLDirector.JPG');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
 /* styles common to both content sections */
 .content-section {
     flex-basis: 100%;
