@@ -68,7 +68,7 @@ h1 {
     width: auto;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -148,16 +148,53 @@ nav::after {
 }
 
 .main-content-team {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-image: url('images/LLDirector.JPG');
+    display: grid;
+    grid-template-columns: minmax(1em, 1fr) minmax(0px, 500px) minmax(1em, 1fr);
+    grid-column-gap: 2em;
+    background-image: url('images/LLsign.jpg');
     background-size: cover;
     background-position: center;
     padding: 20px;
-    padding-bottom: 36rem;
+    padding-bottom: 4rem;
+    list-style: none;
+}
+
+.main {
+    background-color: #fff;
+    color: #000;
+    grid-column: 3 /-4;
+    list-style: none;
+}
+
+.header {
+    grid-column: 2 /-2;
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    
+}
+
+h3 {
+    font-weight: 700;
+    color: #000;
+    font-size: 1.75rem;
+}
+
+.page-title {
+    color: #000;
+    font-size: 2.5rem;
+    justify-self: center;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    margin-top: 1em;
+    background: #fda039;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* styles common to both content sections */
@@ -296,6 +333,17 @@ article {
         justify-content: space-between;
     }
 
+    .page-title::after {
+        content: "";
+        display: block;
+        width: 160px;
+        height: 5px;
+        background: #fda039;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 10px;
+    }
+
     .content-section {
         width: calc(50% - 20px);
         max-width: 500px;
@@ -319,6 +367,30 @@ article {
 @media only screen and (max-width: 767px) {
     .main-content {
         padding: 20px;
+    }
+
+    .main-content-team {
+        display: grid;
+        grid-template-columns: minmax(1em, 1fr) repeat(3, minmax(20px, 320px)) minmax(1em, 1fr);
+    }
+
+    .head {
+        grid-column: 3 / -3;
+    }
+
+    .page-title::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 5px;
+        background: #fda039;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 10px;
+    }
+
+    .section-title::after {
+        margin-left: 0;
     }
 
     .content-section {
