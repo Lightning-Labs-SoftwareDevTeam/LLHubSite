@@ -151,7 +151,7 @@ nav::after {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url('images/LLsign.jpg');
+    background-image: linear-gradient(to top, #648DE5, #000);
     background-size: cover;
     background-position: center;
     padding: 20px;
@@ -163,8 +163,9 @@ nav::after {
     flex-wrap: wrap;
     justify-content: center;
     background-color: #fff;
-    width: 100%;
+    width: 65%;
     padding: 20px;
+    border-radius: 2%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 2rem;
 }
@@ -176,6 +177,18 @@ nav::after {
     margin-bottom: 3em;
 }
 
+.about-p {
+    text-align: start;
+    text-indent: 40px;
+    margin: 50px;
+}
+
+.quote-p {
+    padding-top: 4rem;
+    font-size: 1.56rem;
+    font-weight: 675;
+}
+
 ul {
     list-style: none;
 }
@@ -185,6 +198,8 @@ h3 {
     color: #000;
     font-size: 1.75rem;
     margin-bottom: 0.5em;
+    margin-top: 0px;
+    padding-top: 0px;
 }
 
 .page-title {
@@ -212,6 +227,10 @@ h3 {
 p {
     line-height: 1.6;
     color: #000;
+}
+
+.team-page {
+    background: linear-gradient(to right, #252525, #404245);   
 }
 
 /* styles common to home page content sections */
@@ -297,7 +316,7 @@ article {
     width: 280px;
     margin: 10px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    background: #fff;
+    background: #d4c6c6;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -325,7 +344,7 @@ article {
 }
 
 .circle {
-    background-color: #252525;
+    background-color: #d4c6c6;
     border-radius: 35%;
     cursor: pointer;
     height: 389px;
@@ -357,6 +376,7 @@ article {
     left: 22px;
     top: 164px;
     width: 340px;
+    border-radius: 5%;
 }
 
 .img2 {
@@ -369,6 +389,7 @@ article {
     left: 22px;
     top: 164px;
     width: 340px;
+    scale: 66%;
 }
 
 .divider {
@@ -459,6 +480,10 @@ article {
     color: aliceblue;
     padding-top: 1em;
     padding-bottom: 0%;
+}
+
+.footer-p {
+    color: aliceblue;
 }
 
 /* styles for laptop/desktop screens */
