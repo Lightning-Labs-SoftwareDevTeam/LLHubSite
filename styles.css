@@ -151,7 +151,7 @@ nav::after {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: linear-gradient(to top, #648DE5, #000);
+    background-image: linear-gradient(to top, #C7203b, #000);
     background-size: cover;
     background-position: center;
     padding: 20px;
@@ -373,10 +373,11 @@ article {
 }
 
 .img1 {
-    left: 22px;
-    top: 164px;
+    left: 12px;
+    top: 219px;
     width: 340px;
     border-radius: 5%;
+    scale: 114%;
 }
 
 .img2 {
@@ -387,9 +388,9 @@ article {
 
 .img3 {
     left: 22px;
-    top: 164px;
+    top: 98px;
     width: 340px;
-    scale: 66%;
+    scale: 86%;
 }
 
 .divider {
@@ -530,12 +531,16 @@ article {
     }
 
     .main-content-team {
-        display: grid;
-        grid-template-columns: minmax(1em, 1fr) repeat(3, minmax(20px, 320px)) minmax(1em, 1fr);
+        padding: 10px;
     }
 
-    .head {
-        grid-column: 3 / -3;
+    .main {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .header, .about-p, .quote-p {
+        margin: 10px;
     }
 
     .page-title::after {
