@@ -68,7 +68,7 @@ h1 {
     width: auto;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -147,7 +147,93 @@ nav::after {
     padding: 20px;
 }
 
-/* styles common to both content sections */
+.main-content-team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to top, #C7203b, #000);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    padding-bottom: 4rem;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #fff;
+    width: 65%;
+    padding: 20px;
+    border-radius: 2%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.header {
+    grid-column: 2 /-2;
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.about-p {
+    text-align: start;
+    text-indent: 40px;
+    margin: 50px;
+}
+
+.quote-p {
+    padding-top: 4rem;
+    font-size: 1.56rem;
+    font-weight: 675;
+}
+
+ul {
+    list-style: none;
+}
+
+h3 {
+    font-weight: 700;
+    color: #000;
+    font-size: 1.75rem;
+    margin-bottom: 0.5em;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.page-title {
+    color: #000;
+    font-size: 2.5rem;
+    justify-self: center;
+    letter-spacing: 1px;
+}
+
+.section-title {
+    letter-spacing: 1px;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    margin-top: 1em;
+    background: #fda039;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    line-height: 1.6;
+    color: #000;
+}
+
+.team-page {
+    background: linear-gradient(to right, #252525, #404245);   
+}
+
+/* styles common to home page content sections */
 .content-section {
     flex-basis: 100%;
     padding: 4rem;
@@ -214,6 +300,127 @@ article {
     background: transparent;
 }
 
+/* styles for team page's pop out effect */
+.leader-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.person {
+    flex: 0 0 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    margin: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    background: #d4c6c6;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container {
+    border-radius: 50%;
+    height: 320px;
+    position: relative;
+    -webkit-tap-highlight-color: transparent;
+    transform: scale(0.48);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 400px;
+}
+
+.container:hover {
+    transform: scale(0.58);
+}
+
+.inner-container {
+    clip-path: path(
+        "M 390,400 C 390,504.9341 304.9341,590 200,590 95.065898,590 10,504.9431 10,400 V 10 H 200 390 Z"
+    );
+    position: relative;
+    transform-origin: 50%;
+    top: -200px;
+}
+
+.circle {
+    background-color: #d4c6c6;
+    border-radius: 35%;
+    cursor: pointer;
+    height: 389px;
+    left: 10px;
+    pointer-events: none;
+    position: absolute;
+    top: 210px;
+    width: 380px;
+    overflow: hidden;
+}
+
+.img {
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(10px, 30px) scale(1.1);
+    transform-origin: 50% 50%;
+    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
+    height: auto;
+}
+
+.container:hover .img {
+    transform: translateY(0) scale(1.2);
+}
+
+.img1 {
+    left: 12px;
+    top: 219px;
+    width: 340px;
+    border-radius: 5%;
+    scale: 114%;
+}
+
+.img2 {
+    left: -46px;
+    top: 174px;
+    width: 444px;
+}
+
+.img3 {
+    left: 22px;
+    top: 98px;
+    width: 340px;
+    scale: 86%;
+}
+
+.divider {
+    background-color: #ca6060;
+    height: 1px;
+    width: 160px;
+    margin-top: 500px;
+}
+
+.name, .role, .divider {
+    position: relative;
+    z-index: 10;
+}
+
+.name {
+    color: #404245;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.role {
+    color: #6e6e6e;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 4px;
+    text-align: center;
+}
+
 /* button styling */
 .btn {
     display: block;
@@ -272,8 +479,12 @@ article {
 .row {
     text-align: center;
     color: aliceblue;
-    padding-top: 6em;
+    padding-top: 1em;
     padding-bottom: 0%;
+}
+
+.footer-p {
+    color: aliceblue;
 }
 
 /* styles for laptop/desktop screens */
@@ -281,6 +492,17 @@ article {
     .main-content {
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    .page-title::after {
+        content: "";
+        display: block;
+        width: 160px;
+        height: 5px;
+        background: #fda039;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 10px;
     }
 
     .content-section {
@@ -308,6 +530,50 @@ article {
         padding: 20px;
     }
 
+    .main-content-team {
+        padding: 10px;
+    }
+
+    .main {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .header, .about-p, .quote-p {
+        margin: 10px;
+    }
+
+    .leader-row {
+        flex-direction: column;
+    }
+
+    .person {
+        width: 100%;
+    }
+
+    .container {
+        transform: scale(0.8);
+    }
+
+    h1, h3 {
+        font-size: smaller;
+    }
+
+    .page-title::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 5px;
+        background: #fda039;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 10px;
+    }
+
+    .section-title::after {
+        margin-left: 0;
+    }
+
     .content-section {
         width: 100%;
     }
@@ -327,4 +593,18 @@ article {
     .nav-logo {
         max-width: 40px;
     }
+}
+
+/* for very small screens */
+@media (max-width: 480px) {
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-logo, .right-align-image {
+        display: none;
+    }
+    
 }
