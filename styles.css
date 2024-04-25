@@ -543,6 +543,22 @@ article {
         margin: 10px;
     }
 
+    .leader-row {
+        flex-direction: column;
+    }
+
+    .person {
+        width: 100%;
+    }
+
+    .container {
+        transform: scale(0.8);
+    }
+
+    h1, h3 {
+        font-size: smaller;
+    }
+
     .page-title::after {
         content: "";
         display: block;
@@ -577,4 +593,18 @@ article {
     .nav-logo {
         max-width: 40px;
     }
+}
+
+/* for very small screens */
+@media (max-width: 480px) {
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-logo, .right-align-image {
+        display: none;
+    }
+    
 }
