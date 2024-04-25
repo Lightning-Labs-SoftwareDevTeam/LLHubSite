@@ -147,7 +147,7 @@ nav::after {
     padding: 20px;
 }
 
-.main-content-team {
+.main-content-team, .main-content-projects {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -156,6 +156,10 @@ nav::after {
     background-position: center;
     padding: 20px;
     padding-bottom: 4rem;
+}
+
+.main-content-projects {
+    background-image: linear-gradient(to top, #0eaa81, #000);
 }
 
 .main {
