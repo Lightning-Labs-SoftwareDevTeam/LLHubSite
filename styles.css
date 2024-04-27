@@ -426,6 +426,19 @@ article {
     text-align: center;
 }
 
+/* styles for past innovations */
+.rectangle {
+    background-color: #d4c6c6;
+    cursor: pointer;
+    height: 389px;
+    left: 10px;
+    pointer-events: none;
+    position: absolute;
+    top: 210px;
+    width: 380px;
+    overflow: hidden;
+}
+
 /* button styling */
 .btn {
     display: block;
