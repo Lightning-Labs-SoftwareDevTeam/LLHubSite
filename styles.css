@@ -621,7 +621,7 @@ article {
     .hamburger {
         display: none;
     }
-    
+
     .main-content {
         flex-direction: row;
         justify-content: space-between;
@@ -668,17 +668,18 @@ article {
     }
 
     .nav-links {
-        display: none;
+        display: none !important;
         flex-direction: column;
         position: absolute;
-        top: 100%;
+        top: 45px;
         left: 0;
         width: 100%;
         background-color: #fff;
+        border: 2px solid red;
     }
 
     .nav-links.active {
-        display: flex;
+        display: flex !important;
     }
 
     .nav-logo {
@@ -775,6 +776,7 @@ article {
 }
 
 /* for very small screens */
+/*
 @media (max-width: 480px) {
     .nav-links {
         display: flex;
@@ -785,4 +787,4 @@ article {
     .nav-logo, .right-align-image {
         display: none;
     }    
-}
+} */
