@@ -385,9 +385,10 @@ article {
 }
 
 .img2 {
-    left: -46px;
+    left: -24px;
     top: 174px;
-    width: 444px;
+    width: 434px;
+    scale: 0.8;
 }
 
 .img3 {
@@ -553,10 +554,32 @@ article {
 
     .person {
         width: 100%;
+        position: relative;
     }
 
     .container {
+        padding-top: 20px;
         transform: scale(0.8);
+    }
+
+    .name {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+        margin-top: -20px;
+        z-index: 2;
+    }
+
+    .img3 {
+        top: 152px;
+    }
+
+    .divider, .role {
+        display: none;
+        transform: none;
     }
 
     h1, h3 {
