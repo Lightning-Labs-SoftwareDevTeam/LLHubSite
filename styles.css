@@ -427,6 +427,42 @@ article {
 }
 
 /* styles for past innovations */
+.innovations-row {
+    width: 100%;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 20px;
+}
+
+.proj-container {
+    display: flex;
+    align-items: center;
+}
+
+.inner-container img.rectangle {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.project-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.proj-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.blurb {
+    font-style: italic;
+}
+
 .rectangle {
     background-color: #d4c6c6;
     cursor: pointer;
