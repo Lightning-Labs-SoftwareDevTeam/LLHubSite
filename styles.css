@@ -643,6 +643,20 @@ article {
 
 /* styles for mobile screens */
 @media only screen and (max-width: 767px) {
+    nav {
+        padding: 0 10px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-logo {
+        display: block;
+        max-width: 40px;
+        padding: 10px;
+    }
+
     .main-content {
         padding: 20px;
     }
@@ -728,10 +742,6 @@ article {
     .footer .row {
         padding-top: 3rem;
     }
-
-    .nav-logo {
-        max-width: 40px;
-    }
 }
 
 /* for very small screens */
@@ -744,6 +754,5 @@ article {
 
     .nav-logo, .right-align-image {
         display: none;
-    }
-    
+    }    
 }
