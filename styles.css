@@ -759,6 +759,41 @@ article {
         transform: none;
     }
 
+    .innovations-row {
+        flex-direction: column;
+    }
+
+    .project {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .proj-container {
+        flex-direction: column;
+    }
+
+    .innov-container, .project-details {
+        padding: 20px;
+    }
+
+    .rectangle {
+        position: relative;
+        top: initial;
+        left: initial;
+        width: 100%;
+        height: auto;
+    }
+
+    .project-details {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .blurb {
+        padding-left: 10px;
+        text-indent: 15px;
+    }
+
     h1, h3 {
         font-size: smaller;
     }
@@ -794,17 +829,3 @@ article {
         padding-top: 3rem;
     }
 }
-
-/* for very small screens */
-/*
-@media (max-width: 480px) {
-    .nav-links {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-logo, .right-align-image {
-        display: none;
-    }    
-} */
