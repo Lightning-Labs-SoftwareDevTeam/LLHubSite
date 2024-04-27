@@ -614,6 +614,14 @@ article {
 
 /* styles for laptop/desktop screens */
 @media only screen and (min-width: 768px) {
+    .nav-links {
+        display: flex;
+    }
+    
+    .hamburger {
+        display: none;
+    }
+    
     .main-content {
         flex-direction: row;
         justify-content: space-between;

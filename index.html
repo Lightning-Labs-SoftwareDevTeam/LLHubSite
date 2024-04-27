@@ -60,9 +60,16 @@
                     1566 Trimble Rd Bldg 584, Schofield Barracks, HI 96857
             </div> 
         </footer>
-        document.querySelector('.hamburger').addEventListener('click', () => {
-            const navLinks = document.querySelector('.nav-links');
-            navLinks.classList.toggle('active')''
-        });
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const hamburger = document.querySelector('.hamburger');
+                hamburger.addEventListener('click', () => {
+                    const navLinks = document.querySelector('.nav-links');
+                    navLinks.classList.toggle('active');
+                });    
+            });
+        </script>
+        
     </body>
 </html>
