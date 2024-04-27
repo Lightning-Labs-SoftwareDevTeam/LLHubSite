@@ -190,7 +190,7 @@ nav::after {
 }
 
 .about-p {
-    text-align: start;
+    text-align: center;
     text-indent: 40px;
     margin: 50px;
 }
@@ -759,6 +759,31 @@ article {
         transform: none;
     }
 
+    .innov-section {
+        padding: 20px;
+        background-color: #f0f0f0;
+        border-radius: 5px;
+        margin: 10px 5px;
+    }
+
+    .innov-section .about-p, .innov-section .innov-p {
+        display: block;
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    .innov-section .about-p {
+        font-size: medium;
+        text-align: left;
+    }
+
+    .innov-p {
+        display: block;
+        text-align: center;
+        font-style: italic;
+        padding-top: 30px;
+    }
+
     .innovations-row {
         flex-direction: column;
     }
@@ -823,6 +848,19 @@ article {
 
     .logo-column {
         width: auto;
+    }
+
+    .box {
+        height: 150px;
+    }
+
+    .box img.logo-image {
+        max-height: 100%;
+        max-width: 100%;
+        height: auto;
+        width: auto;
+        display: block;
+        margin: 0 auto;
     }
 
     .footer .row {
