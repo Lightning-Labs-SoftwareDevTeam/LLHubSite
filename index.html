@@ -68,7 +68,7 @@
                     hamburger.addEventListener('click', () => {
                         const navLinks = document.querySelector('.nav-links');
                         navLinks.classList.toggle('active');
-                        console.log('You clicked hamburger!');
+                        document.querySelector('.main-content').classList.toggle('pushed-content');
                     });
                 } else {
                     console.log('Hamburger button not found');

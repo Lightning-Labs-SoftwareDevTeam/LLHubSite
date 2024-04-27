@@ -667,19 +667,38 @@ article {
         display: block;
     }
 
-    .nav-links {
-        display: none !important;
+    nav .nav-links {
+        display: none;
         flex-direction: column;
         position: absolute;
         top: 45px;
-        left: 0;
+        left: -100%;
         width: 100%;
         background-color: #fff;
-        border: 2px solid red;
+        transition: left 0.3s ease;
     }
 
-    .nav-links.active {
-        display: flex !important;
+    nav .nav-links.active {
+        display: flex;
+        left: 0;
+    }
+
+    nav .nav-links li {
+        width: 100%;
+    }
+
+    nav .nav-links li a {
+        display: block;
+        padding: 12px 20px;
+        text-decoration: none;
+        color: #333;
+        background-color: #f9f9f9;
+        border-bottom: 1px solid #ccc;
+        transition: background-color 0.3s ease;
+    }
+
+    nav .nav-links li a:hover, nav .nav-links li a.active {
+        background-color: #ddd;
     }
 
     .nav-logo {
@@ -688,12 +707,13 @@ article {
         padding: 10px;
     }
 
-    .main-content {
-        padding: 20px;
+    .pushed-content {
+        margin-top: 150px;
     }
 
-    .main-content-team {
+    .main-content, .main-content-team, .main-content-projects {
         padding: 10px;
+        transition: margin-top 0.3s ease;
     }
 
     .main {
