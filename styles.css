@@ -73,6 +73,14 @@ h1, h2, h3 {
 }
 
 /* navbar styling */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
 nav {
     display: flex;
     flex-direction: row;
@@ -182,7 +190,7 @@ nav::after {
 }
 
 .about-p {
-    text-align: start;
+    text-align: center;
     text-indent: 40px;
     margin: 50px;
 }
@@ -606,6 +614,14 @@ article {
 
 /* styles for laptop/desktop screens */
 @media only screen and (min-width: 768px) {
+    .nav-links {
+        display: flex;
+    }
+    
+    .hamburger {
+        display: none;
+    }
+
     .main-content {
         flex-direction: row;
         justify-content: space-between;
@@ -643,12 +659,61 @@ article {
 
 /* styles for mobile screens */
 @media only screen and (max-width: 767px) {
-    .main-content {
-        padding: 20px;
+    nav {
+        padding: 0 10px;
     }
 
-    .main-content-team {
+    .hamburger {
+        display: block;
+    }
+
+    nav .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 45px;
+        left: -100%;
+        width: 100%;
+        background-color: #fff;
+        transition: left 0.3s ease;
+    }
+
+    nav .nav-links.active {
+        display: flex;
+        left: 0;
+    }
+
+    nav .nav-links li {
+        width: 100%;
+    }
+
+    nav .nav-links li a {
+        display: block;
+        padding: 12px 20px;
+        text-decoration: none;
+        color: #333;
+        background-color: #f9f9f9;
+        border-bottom: 1px solid #ccc;
+        transition: background-color 0.3s ease;
+    }
+
+    nav .nav-links li a:hover, nav .nav-links li a.active {
+        background-color: #ddd;
+    }
+
+    .nav-logo {
+        display: block;
+        max-width: 40px;
         padding: 10px;
+    }
+
+    .pushed-content {
+        margin-top: 150px;
+    }
+
+    .main-content, .main-content-team, .main-content-projects {
+        padding: 10px;
+        transition: margin-top 0.3s ease;
     }
 
     .main {
@@ -694,6 +759,66 @@ article {
         transform: none;
     }
 
+    .innov-section {
+        padding: 20px;
+        background-color: #f0f0f0;
+        border-radius: 5px;
+        margin: 10px 5px;
+    }
+
+    .innov-section .about-p, .innov-section .innov-p {
+        display: block;
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    .innov-section .about-p {
+        font-size: medium;
+        text-align: left;
+    }
+
+    .innov-p {
+        display: block;
+        text-align: center;
+        font-style: italic;
+        padding-top: 30px;
+    }
+
+    .innovations-row {
+        flex-direction: column;
+    }
+
+    .project {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .proj-container {
+        flex-direction: column;
+    }
+
+    .innov-container, .project-details {
+        padding: 20px;
+    }
+
+    .rectangle {
+        position: relative;
+        top: initial;
+        left: initial;
+        width: 100%;
+        height: auto;
+    }
+
+    .project-details {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .blurb {
+        padding-left: 10px;
+        text-indent: 15px;
+    }
+
     h1, h3 {
         font-size: smaller;
     }
@@ -725,25 +850,20 @@ article {
         width: auto;
     }
 
+    .box {
+        height: 150px;
+    }
+
+    .box img.logo-image {
+        max-height: 100%;
+        max-width: 100%;
+        height: auto;
+        width: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
     .footer .row {
         padding-top: 3rem;
     }
-
-    .nav-logo {
-        max-width: 40px;
-    }
-}
-
-/* for very small screens */
-@media (max-width: 480px) {
-    .nav-links {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-logo, .right-align-image {
-        display: none;
-    }
-    
 }
