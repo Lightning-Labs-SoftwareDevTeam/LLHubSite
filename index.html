@@ -18,6 +18,7 @@
         </div>
         <nav class="nav-container">    
             <img src="images/LL_Logo.png" alt="LL logo" class="nav-logo" />
+            <button class="hamburger">☰</button>
             <ul class="nav-links">
                 <li><a href="javascript:void(0)" class="active">Home</a></li>
                 <li><a href="projects.html">Innovations</a></li>
@@ -59,5 +60,9 @@
                     1566 Trimble Rd Bldg 584, Schofield Barracks, HI 96857
             </div> 
         </footer>
+        document.querySelector('.hamburger').addEventListener('click', () => {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active')''
+        });
     </body>
 </html>

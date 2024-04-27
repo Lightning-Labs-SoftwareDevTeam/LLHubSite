@@ -73,6 +73,14 @@ h1, h2, h3 {
 }
 
 /* navbar styling */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
 nav {
     display: flex;
     flex-direction: row;
@@ -647,8 +655,22 @@ article {
         padding: 0 10px;
     }
 
+    .hamburger {
+        display: block;
+    }
+
     .nav-links {
         display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .nav-links.active {
+        display: flex;
     }
 
     .nav-logo {
