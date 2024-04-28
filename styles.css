@@ -820,7 +820,7 @@ article {
     }
 
     h1, h3 {
-        font-size: smaller;
+        font-size: medium;
     }
 
     .page-title::after {
