@@ -719,6 +719,7 @@ article {
     .main {
         width: 100%;
         padding: 10px;
+        border-radius: 10px;
     }
 
     .header, .about-p, .quote-p {
