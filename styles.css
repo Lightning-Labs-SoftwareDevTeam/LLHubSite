@@ -149,7 +149,7 @@ nav::after {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-image: url('images/DRONES.jpeg');
+    background-image: url('images/compressed/DRONES.jpeg');
     background-size: cover;
     background-position: center;
     padding: 20px;
