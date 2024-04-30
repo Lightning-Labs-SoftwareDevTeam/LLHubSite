@@ -1,7 +1,7 @@
 # Lightning Labs SPARK INNOVATION
 
 [Hub Site](https://lightning-labs-softwaredevteam.github.io/LLHubSite/)
-![QR Code](images/Lightning%20Lab%20Hub%20Site.png)
+![QR Code](images/Lightning%20Labs%20Hub%20Site.png)
 
 **Spark Innovation Chess Game**
 
